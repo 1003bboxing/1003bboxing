@@ -4,8 +4,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="2021ChristmasBox.js"></script>
 <script src="2022NewYearsBox.js"></script>
+<script src="2022ValentineBox.js"></script>
 <script>
-    var boxObj = NewYearsBox2022
+    var boxObj = ValentineBox2022
     let get = {}
     let clicked = 0
     var randomArray=[];
@@ -66,6 +67,9 @@
         if(box === "ChristmasBox2021"){
             boxObj = ChristmasBox2021
         }
+        if(box === "ValentineBox2022"){
+            boxObj = ValentineBox2022
+        }
         console.log(boxObj)
         document.getElementById("board").innerHTML = ""
         get = {}
@@ -77,7 +81,8 @@
 </script>
 </header>
 <body style="background: black; color: white">
-<select id="box" onchange="handleChangeBox()" value="NewYearsBox2022">
+<select id="box" onchange="handleChangeBox()" value="ValentineBox2022">
+    <option value="ValentineBox2022">2022情人節寶箱</option>
     <option value="NewYearsBox2022">2022新年寶箱</option>
     <option value="ChristmasBox2021">2021聖誕寶箱</option>
 </select>
